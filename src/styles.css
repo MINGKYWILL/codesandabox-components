@@ -1,0 +1,106 @@
+.App {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  background-color: darksalmon;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.sort-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border: none;
+  background-color: tomato;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sort-btn:hover,
+.sort-btn:active {
+  background-color: gold;
+}
+
+/******* Comments ********/
+.comments {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: start;
+}
+.comments-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  border: 1.3px solid #228be6;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 30px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.input-name:focus,
+.input-text:focus {
+  outline: none;
+  color: #555;
+  border-bottom: 1px solid lightgray;
+}
+.input-name {
+  border: none;
+  border-bottom: 1px solid lightsteelblue;
+  width: 150px;
+}
+.input-text {
+  border: none;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.comment-btn {
+  display: inline-block;
+  margin-left: auto;
+  width: 100px;
+  padding: 12px 10px;
+  color: #fff;
+  border: none;
+  background-color: #339af0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.comment-btn:hover,
+.comment-btn:active {
+  background-color: #228be6;
+}
+
+/******* Comments list ********/
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 20px 10px;
+}
+.list h4 {
+  margin: 0;
+}
+.list p {
+  color: #555;
+}
+.likes {
+  font-size: 12px;
+  color: #555;
+}
+.list-date {
+  font-size: 12px;
+  color: #666;
+}
