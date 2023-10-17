@@ -6,18 +6,20 @@ export default function App() {
   const [comment, setComment] = useState([]);
   const [commentList, setCommentList] = useState([]);
   const [likes, setLikes] = useState(null);
-
-  const handleComment = (e) => {
-    setComment(e.target.value);
-  };
+  
   const handleName = (e) => {
     setName(e.target.value);
   };
+  const handleComment = (e) => {
+    setComment(e.target.value);
+  };
+  
   function hitLike() {
     setLikes(likes + 1);
   }
 
-  const handleList = (name, comment) => {
+
+  const handleList = () => {
     if (name && comment) {
       const newComment = {
         name: name,
@@ -35,8 +37,8 @@ export default function App() {
       <CommentsForm
         name={name}
         onName={handleName}
-        onComment={handleComment}
         comment={comment}
+        onComment={handleComment}
         onList={handleList}
       />
       <CommentList commentList={commentList} likes={likes} onLikes={hitLike} />
